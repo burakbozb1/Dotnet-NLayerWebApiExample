@@ -27,7 +27,7 @@ namespace Nlayer.Api.Middlewares
                     {
                         response = CustomResponseDto<NoContentDto>.Fail(statusCode, "Beklenmedik bir hata oluştu.");
                     }
-                    else 
+                    else
                     {
                         response = CustomResponseDto<NoContentDto>.Fail(statusCode, exceptionFeature.Error.Message);
                     }
