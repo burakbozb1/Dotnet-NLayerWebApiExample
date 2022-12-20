@@ -1,5 +1,6 @@
 # Core Layer
 **Core Layer** -> Repository Layer -> Service Layer -> (Caching Layer) -> Api Layer  
+## What is core layer
 This layer is a class library. It is main project of solution. This project includes entity models, data transfer models and common interfaces.  
 Our entites are categories, products and product features. Category has many products. Each product has one product feature. Our entites are:   
 1. Base Entity: This entity has the common properties. Other entites inherits from base entity. This is an abstract class.  
@@ -43,7 +44,7 @@ public class ProductFeature
   public Product Product { get; set; }
 }
 ```  
-
+## Interfaces 
 Interfaces are:
 - IGenericRepository
 - ICategoryRepository
@@ -55,3 +56,6 @@ Interfaces are:
 
 Generic repository and service interfaces include standard crud functions. Other service and repository interfaces inherit from generic ones and they include specific functions.  
 IUnitOfWork interface includes two functions. They are async commit and commit. Main purpose of using unit of work design pattern is that we can do a lot of changes in our db context object with one transaction. If we do not use this pattern, we have to commit to database for all operations each by each. 
+
+## DTOs
+The difference between data transfer objects and entites are that entites have properties that we do not want to serve to users. For example we do not want to show updated date to users and category entity has updated date property. It gets this property from BaseEntity. CategoryDto inherits from BaseEntityDto and BaseEntityDto has not UpdatedDate property. So when we send response to users, we maps data of Category to CategoryDto and we send this object.
