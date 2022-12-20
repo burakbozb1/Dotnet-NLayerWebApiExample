@@ -2,7 +2,7 @@
 **Core Layer** -> Repository Layer -> Service Layer -> (Caching Layer) -> Api Layer  
 This layer is a class library. It is main project of solution. This project includes entity models, data transfer models and common interfaces.  
 Our entites are categories, products and product features. Category has many products. Each product has one product feature. Our entites are:   
-1. Base Entity: This entity has the common properties. Other entites inherits with base entity. This is an abstract class.  
+1. Base Entity: This entity has the common properties. Other entites inherits from base entity. This is an abstract class.  
 ```csharp
 public abstract class BaseEntity
 {
