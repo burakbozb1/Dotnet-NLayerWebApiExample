@@ -31,7 +31,7 @@ This is a class library and core of the solution. It includes entity models, dat
 2. Repository Layer ([Details](https://github.com/burakbozb1/Dotnet-NLayerWebApiExample/blob/master/NLayer.Repository/README.md))   
 This is a class library. This layer deals with database. It includes database context, model configuration, migrations and implementation of unit of work design pattern.  
 
-3. Service Layer ([Details](https://github.com/burakbozb1/Dotnet-NLayerWebApiExample/blob/master/NLayer.Service/README.md)) 
+3. Service Layer ([Details](https://github.com/burakbozb1/Dotnet-NLayerWebApiExample/blob/master/NLayer.Service/README.md))  
 This is a class library. It serves data to web api. All bussiness processes are in this layer. Global exception handling, mapping and validations are in this layer.
 
 4. API ([Details](https://github.com/burakbozb1/Dotnet-NLayerWebApiExample/blob/master/Nlayer.Api/README.md))   
