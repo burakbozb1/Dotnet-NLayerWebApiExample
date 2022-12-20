@@ -54,4 +54,4 @@ Interfaces are:
 - IUnitOfWork  
 
 Generic repository and service interfaces include standard crud functions. Other service and repository interfaces inherit from generic ones and they include specific functions.  
-IUnitOfWork interface includes two functions. They are async commit and commit. Main purpose of using unit of work design pattern is that we can do a lot of changes in our db context object with one transaction. If we do not use this pattern, we have to commit to database for all operations each by. 
+IUnitOfWork interface includes two functions. They are async commit and commit. Main purpose of using unit of work design pattern is that we can do a lot of changes in our db context object with one transaction. If we do not use this pattern, we have to commit to database for all operations each by each. 
